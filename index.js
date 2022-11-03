@@ -9,6 +9,8 @@ const app = express()
 const DB_URL = process.env.DB_URL || 'mongodb+srv://NechJust:Yrk-pT4-RkZ-ZHw@cluster0.aygthg8.mongodb.net/?retryWrites=true&w=majority'
 const PORT = 4444
 
+
+app.use(express.json());
 app.use(cors((
     {
         origin: ['https://anijojo.online', 'http://localhost:3000'],
