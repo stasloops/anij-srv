@@ -7,7 +7,7 @@ const { default: mongoose } = require('mongoose')
 
 const app = express()
 const DB_URL = process.env.DB_URL || 'mongodb+srv://NechJust:Yrk-pT4-RkZ-ZHw@cluster0.aygthg8.mongodb.net/?retryWrites=true&w=majority'
-const PORT = 4444
+const PORT = process.env.PORT || 4444
 
 
 app.use(express.json());
